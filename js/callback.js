@@ -1,3 +1,4 @@
+// Callback style exmpl
 const astrosUrl = 'http://api.open-notify.org/astros.json';
 const wikiUrl = 'https://en.wikipedia.org/api/rest_v1/page/summary/';
 const peopleList = document.getElementById('people');
@@ -27,14 +28,12 @@ function generateHTML(data) {
   const section = document.createElement('section');
   peopleList.appendChild(section);
   section.innerHTML = `
-  <section class="shadow">
   ${data.type === 'standard' ? 
   `<img src=${data.thumbnail.source}>` :
   `<a href=${data.content_urls.desktop.page}>Wikipedia disambiguation page</a>`}
     <h2>${data.title}</h2>
     <p>${data.description}</p>
     <p>${data.extract}</p>
-    </section>
   `;
 }
 

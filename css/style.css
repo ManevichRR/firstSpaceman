@@ -15,7 +15,7 @@
     margin: 0;
     padding: 0.5em 0 2em 0;
     background-color: #c4cbd8;
-    background-image: linear-gradient(165deg, #757F9A 0%, #D7DDE8 100%);
+    background-image: linear-gradient(165deg, #757f9a 0%, #D7DDE8 100%);
     background-repeat: no-repeat;
   }
   
@@ -44,6 +44,9 @@
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 20px;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+         box-shadow: 0 8px 6px -6px black;
   }
   
   section:last-of-type {
@@ -62,7 +65,8 @@
     color: white;
     padding: 5px 10px;
     border-radius: 15px;
-    background-color: #074473;
+    background: rgb(180,227,145); /* Old browsers */
+    background: -webkit-linear-gradient(top, rgba(180,227,145,1) 0%,rgba(97,196,25,1) 50%,rgba(180,227,145,1) 100%); /* Chrome10-25,Safari5.1-6 */
   }
   
   h2 {
@@ -97,11 +101,7 @@
     cursor: pointer;
   }
 
-  .shadow {
-    -webkit-box-shadow: 0 8px 6px -6px black;
-    -moz-box-shadow: 0 8px 6px -6px black;
-         box-shadow: 0 8px 6px -6px black;
- }
+
   
   
   /* MEDIA QUERIES */
@@ -130,6 +130,9 @@
       padding: 20px;
       margin-bottom: 35px;
       overflow: auto;
+      -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+         box-shadow: 0 8px 6px -6px black;
     }
   }
   
